@@ -26,7 +26,7 @@ body {
   height: 100vh;
 }
 
-.title h1 {
+.title h2 {
   color: white;
   font-size: 60px;
   font-family: 'Lobster', cursive;
@@ -186,6 +186,37 @@ body {
   opacity: 0.9;
   box-shadow: inset 0 0 2vmin rgba(255, 255, 255, 0.5);
 }
+
+/*Prueba 2.0 flor 2*/
+.flower__leaf2 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 8vmin;
+  height: 11vmin;
+  border-radius: 51% 49% 47% 53%/44% 45% 55% 69%;
+  background-color: #72d9f6;
+  background-image: linear-gradient(to top, #4dd2f7, #4dd2f7);
+  transform-origin: bottom center;
+  opacity: 0.9;
+  box-shadow: inset 0 0 2vmin rgba(255, 255, 255, 0.5);
+}
+
+/*Prueba 2.0 flor 3*/
+.flower__leaf3 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 8vmin;
+  height: 11vmin;
+  border-radius: 51% 49% 47% 53%/44% 45% 55% 69%;
+  background-color: #f6f472;
+  background-image: linear-gradient(to top, #f4f033, #f4f033);
+  transform-origin: bottom center;
+  opacity: 0.9;
+  box-shadow: inset 0 0 2vmin rgba(255, 255, 255, 0.5);
+}
+
 .flower__leaf--1 {
   transform: translate(-10%, 1%) rotateY(40deg) rotateX(-50deg);
 }
@@ -205,6 +236,29 @@ body {
   z-index: 1;
   opacity: 0.8;
 }
+
+.flower__leaf--44 {
+  width: 8vmin;
+  height: 8vmin;
+  transform-origin: bottom left;
+  border-radius: 4vmin 10vmin 4vmin 4vmin;
+  transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
+  background-image: linear-gradient(to top, #4dd2f7, #4dd2f7);
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.flower__leaf--444 {
+  width: 8vmin;
+  height: 8vmin;
+  transform-origin: bottom left;
+  border-radius: 4vmin 10vmin 4vmin 4vmin;
+  transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
+  background-image: linear-gradient(to top, #f4f033, #f4f033);
+  z-index: 1;
+  opacity: 0.8;
+}
+
 .flower__white-circle {
   position: absolute;
   left: -3.5vmin;
@@ -280,15 +334,48 @@ body {
   bottom: 0vmin;
   width: 1vmin;
   height: 1vmin;
-  background-color: rgb(255, 251, 0);
+  background-color: rgb(247, 107, 175);
   border-radius: 50%;
   filter: blur(0.2vmin);
   -webkit-animation: light-ans 4s linear infinite backwards;
           animation: light-ans 4s linear infinite backwards;
 }
 .flower__light:nth-child(odd) {
-  background-color: #f76baf;
+  background-color: #ffffff;
 }
+
+/*Prueba 2.0 luces en flor 2*/
+.flower__light2 {
+  position: absolute;
+  bottom: 0vmin;
+  width: 1vmin;
+  height: 1vmin;
+  background-color: rgb(82, 239, 245);
+  border-radius: 50%;
+  filter: blur(0.2vmin);
+  -webkit-animation: light-ans 4s linear infinite backwards;
+          animation: light-ans 4s linear infinite backwards;
+}
+.flower__light2:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/*Prueba 2.0 luces en flor 3*/
+.flower__light3 {
+  position: absolute;
+  bottom: 0vmin;
+  width: 1vmin;
+  height: 1vmin;
+  background-color: rgb(255, 251, 0);
+  border-radius: 50%;
+  filter: blur(0.2vmin);
+  -webkit-animation: light-ans 4s linear infinite backwards;
+          animation: light-ans 4s linear infinite backwards;
+}
+.flower__light3:nth-child(odd) {
+  background-color: #ffffff;
+}
+
 .flower__light--1 {
   left: -2vmin;
   -webkit-animation-delay: 1s;
@@ -329,6 +416,9 @@ body {
   -webkit-animation-delay: 3.5s;
           animation-delay: 3.5s;
 }
+
+
+
 .flower__grass {
   --c: #04661f;
   --line-w: 1.5vmin;
